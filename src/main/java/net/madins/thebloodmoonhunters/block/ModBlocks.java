@@ -1,7 +1,7 @@
 package net.madins.thebloodmoonhunters.block;
 
 import net.madins.thebloodmoonhunters.item.ModItems;
-import net.madins.thebloodmoonhunters.thebloodmoonhunters;
+import net.madins.thebloodmoonhunters.TheBloodMoonHunters;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -16,7 +16,7 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, thebloodmoonhunters.MODID);
+            DeferredRegister.create(ForgeRegistries.BLOCKS, TheBloodMoonHunters.MODID);
 
     public static final RegistryObject<Block> BLOODBLOCK = registerBlock( "bloodblock",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));

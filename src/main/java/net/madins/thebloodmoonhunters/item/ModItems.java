@@ -1,6 +1,6 @@
 package net.madins.thebloodmoonhunters.item;
 
-import net.madins.thebloodmoonhunters.thebloodmoonhunters;
+import net.madins.thebloodmoonhunters.TheBloodMoonHunters;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -9,13 +9,15 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, thebloodmoonhunters.MODID);
+            DeferredRegister.create(ForgeRegistries.ITEMS, TheBloodMoonHunters.MODID);
 
     public static final RegistryObject<Item> BLOODSTONE = ITEMS.register("bloodstone",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SAW_CLEAVER = ITEMS.register("saw_cleaver",
-            () -> new SawCleaverItem(new Item.Properties().durability(250))
-    );
+            () -> new TrickWeaponItem(
+                    new Item.Properties().durability(500),
+                    WeaponCapabilities.SAW_CLEAVER_CLOSED,
+                    WeaponCapabilities.SAW_CLEAVER_OPENED
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

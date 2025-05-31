@@ -20,22 +20,19 @@ import org.slf4j.Logger;
 import software.bernie.geckolib.GeckoLib;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(thebloodmoonhunters.MODID)
-public class thebloodmoonhunters
+@Mod(TheBloodMoonHunters.MODID)
+public class TheBloodMoonHunters
 {
-    public thebloodmoonhunters() {
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupCommon);
-    }
-
+    public TheBloodMoonHunters(){}
     private void setupCommon(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            // Registrar animaciones después de que Forge esté listo
-            ModAnimations.register();
-        });
+                    // Registrar animaciones después de que Forge esté listo
+                    ModAnimations.register();
+                });
     }
     public static final String MODID = "thebloodmoonhunters";
     private static final Logger LOGGER = LogUtils.getLogger();
-    public thebloodmoonhunters(FMLJavaModLoadingContext context)
+    public TheBloodMoonHunters(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
         ModItems.register(modEventBus);
@@ -49,7 +46,7 @@ public class thebloodmoonhunters
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-       
+
     }
 
     // Add the example block item to the building blocks tab
@@ -74,7 +71,7 @@ public class thebloodmoonhunters
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-           
+
         }
     }
 }
