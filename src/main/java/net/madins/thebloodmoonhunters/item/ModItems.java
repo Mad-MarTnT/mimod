@@ -13,6 +13,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> BLOODSTONE = ITEMS.register("bloodstone",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SAW_CLEAVER = ITEMS.register("saw_cleaver",
+            () -> new SawCleaverItem(new Item.Properties().durability(250))
+    );
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
