@@ -1,7 +1,11 @@
 {
- "item.tutorialmod.bloodstone": "Bloodstone",
+ "item.thebloodmoonhunters.bloodstone": "Bloodstone",
+ "item.thebloodmoonhunters.hunter_helmet":"Old Hunter Hat" ,
+ "item.thebloodmoonhunters.hunter_chestplate": "Old Hunter Coat",
+ "item.thebloodmoonhunters.hunter_leggings": "Old Hunter Pants" ,
+ "item.thebloodmoonhunters.hunter_boots": "Old Hunter Boots",
 
- "block.tutorialmod.bloodblock": "Block of Blood",
+ "block.thebloodmoonhunters.bloodblock": "Block of Blood",
 
  "creativetab.tutorial_tab": "bloodstone tutorial tab"
 }

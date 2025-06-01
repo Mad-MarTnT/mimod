@@ -2,8 +2,10 @@ package net.madins.thebloodmoonhunters;
 
 import com.mojang.logging.LogUtils;
 import net.madins.thebloodmoonhunters.block.ModBlocks;
+import net.madins.thebloodmoonhunters.datagen.ModItemModelProvider;
 import net.madins.thebloodmoonhunters.item.ModCreativeModTabs;
 import net.madins.thebloodmoonhunters.item.ModItems;
+import net.madins.thebloodmoonhunters.item.custom.HunterArmorItem;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
