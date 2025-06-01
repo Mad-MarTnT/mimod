@@ -16,7 +16,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     }
     @Override
-    protected void registerModels(){
+    protected void registerModels() {
         simpleItem(ModItems.HUNTER_BOOTS);
         simpleItem(ModItems.HUNTER_LEGGINGS);
         simpleItem(ModItems.HUNTER_CHESTPLATE);
@@ -25,7 +25,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item){
         return withExistingParent(item.getId().getPath(),
-                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(TheBloodMoonHunters.MODID, "item/" + item.getId().getPath()));
     }
 }

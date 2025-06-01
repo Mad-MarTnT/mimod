@@ -20,6 +20,10 @@ public class ModCreativeModTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.BLOODSTONE.get());
                         output.accept(ModBlocks.BLOODBLOCK.get());
+                        output.accept(ModItems.HUNTER_HELMET.get());
+                        output.accept(ModItems.HUNTER_CHESTPLATE.get());
+                        output.accept(ModItems.HUNTER_LEGGINGS.get());
+                        output.accept(ModItems.HUNTER_BOOTS.get());
                     })
                     .build());
 

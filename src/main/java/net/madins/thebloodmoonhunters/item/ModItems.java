@@ -15,6 +15,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> BLOODSTONE = ITEMS.register("bloodstone",
             () -> new Item(new Item.Properties()));
+
+
     public static final RegistryObject<Item> HUNTER_HELMET = ITEMS.register("hunter_helmet",
             ()-> new HunterArmorItem(ModArmorMaterials.HUNTER, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> HUNTER_CHESTPLATE = ITEMS.register("hunter_chestplate",
@@ -23,6 +25,12 @@ public class ModItems {
             ()-> new HunterArmorItem(ModArmorMaterials.HUNTER, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> HUNTER_BOOTS = ITEMS.register("hunter_boots",
             ()-> new HunterArmorItem(ModArmorMaterials.HUNTER, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+
+
+
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
