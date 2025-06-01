@@ -13,11 +13,6 @@ public class ModItems {
 
     public static final RegistryObject<Item> BLOODSTONE = ITEMS.register("bloodstone",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> SAW_CLEAVER = ITEMS.register("saw_cleaver",
-            () -> new TrickWeaponItem(
-                    new Item.Properties().durability(500),
-                    WeaponCapabilities.SAW_CLEAVER_CLOSED,
-                    WeaponCapabilities.SAW_CLEAVER_OPENED
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

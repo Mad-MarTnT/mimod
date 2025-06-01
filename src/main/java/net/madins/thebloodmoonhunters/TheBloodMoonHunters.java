@@ -2,7 +2,6 @@ package net.madins.thebloodmoonhunters;
 
 import com.mojang.logging.LogUtils;
 import net.madins.thebloodmoonhunters.block.ModBlocks;
-import net.madins.thebloodmoonhunters.epicfight.ModAnimations;
 import net.madins.thebloodmoonhunters.item.ModCreativeModTabs;
 import net.madins.thebloodmoonhunters.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -25,10 +24,6 @@ public class TheBloodMoonHunters
 {
     public TheBloodMoonHunters(){}
     private void setupCommon(final FMLCommonSetupEvent event) {
-        event.enqueueWork(() -> {
-                    // Registrar animaciones después de que Forge esté listo
-                    ModAnimations.register();
-                });
     }
     public static final String MODID = "thebloodmoonhunters";
     private static final Logger LOGGER = LogUtils.getLogger();
